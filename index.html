@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="js/main.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <section class="advice">
+      <h2 class="advice__id">ADVICE #<span id="advice-id"></span></h2>
+      <p class="advice__text">
+        "<span id="advice-text"></span>"
+      </p>
+      <img 
+        class="advice__divider"
+        srcset="
+          assets/img/pattern-divider-desktop.svg 444w,
+          assets/img/pattern-divider-mobile.svg 295w
+        "
+        sizes="(min-width: 1000px) 444px, 295px"
+        alt="Pattern divider" 
+      >
+      <button 
+        type="button" 
+        id="advice-request" 
+        class="advice__request" 
+        title="Request new Advice"
+      >
+        <img src="assets/img/icon-dice.svg" alt="Request new Advice (Icon)">
+      </button>
+    </section>
+  </main>
+</body>
+</html>

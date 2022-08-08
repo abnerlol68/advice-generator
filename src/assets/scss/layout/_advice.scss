@@ -1,0 +1,52 @@
+@use '../utils';
+
+.advice {
+  width: 480px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.8rem;
+  background: utils.$Dark_Grayish_Blue;
+
+  &__id {
+    margin-bottom: 0;
+  }
+
+  &__divider {
+    margin: 2rem 0 0;
+  }
+
+  &__request {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: -5.8rem;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: utils.$Neon_Green;
+
+    &:hover{
+      box-shadow: 
+        0 0 0.1em utils.$Neon_Green, 
+        0 0 0.2em utils.$Neon_Green, 
+        0 0 1em utils.$Neon_Green, 
+        0 0 2em utils.$Neon_Green;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .advice {
+    width: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .advice {
+    width: 280px;
+  }
+}

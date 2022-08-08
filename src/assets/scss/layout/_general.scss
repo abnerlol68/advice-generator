@@ -1,0 +1,16 @@
+@use '../utils';
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: utils.$Dark_Blue;
+  
+  main {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+}
+
